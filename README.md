@@ -1,4 +1,6 @@
 # 🍽️ Warehouse Canteen — Meal Token System
+> 🆕 **v3.1 is here!** This release adds pre-booking, search, photo modal, and a complete launch kit (user manual + scan poster).
+> See the latest version in [`v3-no-react/`](v3-no-react/README.md) — or read the full changelog in [CHANGELOG.md](CHANGELOG.md).
 > 🆕 **NEW:** A simpler [no-React version is now available in `v3-no-react/`](v3-no-react/README.md) — the entire app lives inside one Google Sheet's Apps Script project. No StackBlitz, no npm, no separate hosting.
 
 > A digital token-based meal management system for third-party warehouse employees, built with React + Google Apps Script + Google Sheets.
