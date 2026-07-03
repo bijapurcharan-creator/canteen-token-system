@@ -1,4 +1,17 @@
 # 🍽️ Warehouse Canteen — Meal Token System
+## Latest Features (v3.2.2)
+
+- ✅ **Race-condition safe token generation** — no more duplicate tokens from rapid taps
+- ✅ **Daily audit emails** — automated 10 PM report on canteen operations
+- ✅ **Anomaly detection** — automatically flags duplicate tokens and orphan employees
+- ✅ **Excel exports** — canteen staff can download monthly reports for billing
+- ✅ **Pre-booking system** — employees book tomorrow's meals 10 AM – 6 PM
+
+## Deployment
+
+See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for step-by-step setup.
+
+Latest stable: v3.2.2 (race condition fix)
 > 🆕 **v3.1 is here!** This release adds pre-booking, search, photo modal, and a complete launch kit (user manual + scan poster).
 > See the latest version in [`v3-no-react/`](v3-no-react/README.md) — or read the full changelog in [CHANGELOG.md](CHANGELOG.md).
 > 🆕 **NEW:** A simpler [no-React version is now available in `v3-no-react/`](v3-no-react/README.md) — the entire app lives inside one Google Sheet's Apps Script project. No StackBlitz, no npm, no separate hosting.
