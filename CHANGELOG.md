@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.2.2] — 2026-07-03
+
+### Fixed
+- CRITICAL: Race condition that allowed duplicate tokens when users rapid-tapped "Use Token"
+  * Added LockService.tryLock() check in generateToken() and prebookTomorrow()
+  * Prevents concurrent executions from bypassing duplicate detection
+  * Frontend re-entry guards added for additional protection
+
+### Added
+- Daily audit email system (runs automatically at 10 PM)
+  * Sends detailed report: tokens generated vs served
+  * Per-warehouse breakdown with conversion rates
+  * Automatic anomaly detection (duplicates, orphan employees)
+  * Tomorrow's pre-booking preview
+  * Recipient: charan.bijapur@rentomojo.com + bijapurcharan@gmail.com
+
+### Tech
+- Added escapeHtml() helper for safe HTML email generation
+- Added cleanupDuplicateTokens() function for historical cleanup
+- Added previewDuplicateCleanup() for safe dry-run testing
+- Fixed SHEETS.CANTEEN → SHEETS.STAFF constant reference
+
 ## [2.0.0] — 2026-05-27
 
 ### Added
