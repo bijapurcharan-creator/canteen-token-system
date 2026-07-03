@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [3.2.2] — 2026-07-03
 
+
 ### Fixed
 - CRITICAL: Race condition that allowed duplicate tokens when users rapid-tapped "Use Token"
   * Added LockService.tryLock() check in generateToken() and prebookTomorrow()
